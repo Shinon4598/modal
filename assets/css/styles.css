@@ -1,0 +1,79 @@
+body{
+    background-image: url("/assets/img/fondo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0%;
+    margin: 0%;
+}
+h1{
+    font-size: 3.5rem;
+}
+.modal-contenedor{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    background-color: white;
+    border-radius: 15px;
+    padding: 50px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal button{
+    background-image: linear-gradient(to right, pink, lightblue);
+    border: none;
+    padding: 13px 4px;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+.modal button span{
+    background-color: white;
+    padding: 10px ;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: .3s ease;
+}
+.modal button:hover span{
+    background-color: transparent;
+    scale: 0.98;
+    color: red;
+}
+.modal button:hover{
+    scale: 0.98;
+}
+.pestaña{
+    position: absolute;
+    background-color: white;
+    height: 350px;
+    width: 600px;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: none;
+    justify-content: right;
+    align-items: start;
+}
+.pestaña button img{
+    width: 30px;
+    height: 30px;
+}
+.pestaña button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.pestaña button:hover {
+    transform: rotate(180deg);
+    filter: brightness(0.8);
+}
+.show{
+    display: flex;
+}
